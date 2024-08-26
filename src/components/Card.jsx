@@ -24,15 +24,15 @@ function ActionAreaCard({ data }) {
     });
   };
 
-  const handleCardClick = () => {
-    navigate("/view-creator", {
+  const handleCardClick = (id) => {
+    navigate(`/view-creator/${id}`, {
       state: { creator: data },
     });
   };
 
   return (
     <Card sx={{ cursor: "pointer" }}>
-      <CardActionArea onClick={handleCardClick}>
+      <CardActionArea onClick={() => handleCardClick(data.id)}>
         <CardMedia
           component="img"
           height={250}

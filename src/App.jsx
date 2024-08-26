@@ -23,7 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/add-creator" element={<AddCreator />} />
-          <Route path="/view-creator" element={<ViewCreator />} />
+          <Route path="/view-creator/:id" element={<ViewCreator />} />
           <Route path="/edit-creator" element={<EditCreator />} />
           <Route path="/all-creators" element={<AllCreators />} />
         </Routes>
